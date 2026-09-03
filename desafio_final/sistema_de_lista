@@ -1,0 +1,53 @@
+let alunos = [
+     "Helo",
+    "Rafa",
+    "Marina",
+    "Sophia",
+    "Isabela",
+    "Laura",
+    "Nicholas",
+    "Stefan"
+];
+
+
+console.log("Stefan existe?", alunos.includes("Stefan"));
+
+
+
+console.log("Posição da stefan:", alunos.indexOf("Stefan"));
+
+
+
+let parteLista = alunos.slice(0, 5);
+
+console.log("Parte da lista:", parteLista);
+
+
+
+alunos.splice(3, 1);
+
+console.log("Depois de remover helo:", alunos);
+
+
+
+alunos.splice(3, 0, "Isabela");
+
+console.log("Depois de inserir Isabela:", alunos);
+
+
+
+alunos.sort();
+
+console.log("Alunos ordenados:", alunos);
+
+
+
+alunos.reverse();
+
+console.log("Lista invertida:", alunos);
+
+
+
+let listaTexto = alunos.join(", ");
+
+console.log("Lista como texto:", listaTexto);
